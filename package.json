@@ -1,0 +1,23 @@
+{
+  "name": "inject-cms-libs",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13",
+    "pnpm": ">=11"
+  },
+  "packageManager": "pnpm@11.5.2",
+  "scripts": {
+    "build": "pnpm -r build",
+    "build:models": "pnpm --filter @injectops/models build",
+    "build:dtos": "pnpm --filter @injectops/dtos build",
+    "build:sdk": "pnpm --filter @injectops/delivery-sdk build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "publish:all": "pnpm -r publish --access public --no-git-checks"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.31.0",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,5 @@
+packages:
+  - "packages/*"
+
+registries:
+  "@injectops": https://npm.pkg.github.com/
