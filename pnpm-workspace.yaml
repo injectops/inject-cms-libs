@@ -1,5 +1,8 @@
 packages:
   - "packages/*"
 
+allowBuilds:
+  esbuild: true
+
 registries:
   "@injectops": https://npm.pkg.github.com/
