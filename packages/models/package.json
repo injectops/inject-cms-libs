@@ -1,0 +1,37 @@
+{
+  "name": "@injectops/models",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "prepare": "tsc --build",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
+  },
+  "peerDependencies": {
+    "reflect-metadata": "^0.2.0",
+    "typeorm": "^1.0.0"
+  },
+  "devDependencies": {
+    "reflect-metadata": "0.2.2",
+    "typeorm": "1.0.0",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "uuid": "14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/injectops/inject-cms-libs"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  }
+}
